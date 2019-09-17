@@ -95,7 +95,7 @@ jobs:
         fi
         cd -
     - name: Publish
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@draft-merger
       if: startsWith(github.ref, 'refs/tags/')
       with:
           files: 'rust-bin*'
